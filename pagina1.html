@@ -9,92 +9,135 @@
 
 </head>
 <body>
-    <header>
-        <div class="titulos">
-            <h1>Globex 3D</h1>
-            <ul class="pestanas">
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#cesta">Cesta</a></li>
-                <li><a href="#descarga">Descarga</a></li>
+    <header class="titulos">
+            <h1 class= "tiuloprincipal">Globex 3D</h1>
+            <div class="menu-derecha">
+                <ul class="pestanas">
+                <li><a href="contacto.html"target="_blank">Contacto</a></li>
+                <li><a href="cesta.html"target="_blank">Cesta</a></li>
+                <li><a href="descarga.html"target="_blank">Descarga</a></li>
             </ul>
-        </div>
         <div class="busqueda">
             <input type="text" placeholder="Buscar...">
             <button>Buscar</button>
         </div>
+        </div>
     </header>
-    
-    
-    <section class="productos">
-        <div class="producto">
-            <img src="grogu.jpg" alt="Producto 1">
-            <h2>Grogu 20cm</h2>
-            <p>Descripción del Producto 1.</p>
-            <p>Precio: $2500</p>
-            <button>Agregar al carrito</button>
+    <header>
+        <div class="carrusel">
+            <img src="filaments.jpg" alt="Imagen 1">
+            <img src="istockphoto-1297185214-612x612.jpg" alt="Imagen 2">
+            <img src="imagen3.jpg" alt="Imagen 3">
+            <img src="impresora 3d.jpg" alt="imagen 4">
         </div>
     
-        <div class="producto">
-            <img src="motor.jpg" alt="Producto 2">
-            <h2>Motor V8 9cm</h2>
-            <p>Descripción del Producto 2.</p>
-            <p>Precio: $2000</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <div class="producto">
-            <img src="grogu.jpg" alt="Producto 1">
-            <h2>Grogu 20cm</h2>
-            <p>Descripción del Producto 1.</p>
-            <p>Precio: $2500</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <div class="producto">
-            <img src="motor.jpg" alt="Producto 2">
-            <h2>Motor V8 9cm</h2>
-            <p>Descripción del Producto 2.</p>
-            <p>Precio: $2000</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <div class="producto">
-            <img src="grogu.jpg" alt="Producto 1">
-            <h2>Grogu 20cm</h2>
-            <p>Descripción del Producto 1.</p>
-            <p>Precio: $2500</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <div class="producto">
-            <img src="motor.jpg" alt="Producto 2">
-            <h2>Motor V8 9cm</h2>
-            <p>Descripción del Producto 2.</p>
-            <p>Precio: $2000</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <div class="producto">
-            <img src="grogu.jpg" alt="Producto 1">
-            <h2>Grogu 20cm</h2>
-            <p>Descripción del Producto 1.</p>
-            <p>Precio: $2500</p>
-            <button>Agregar al carrito</button>
-        </div>
-    
-        <div class="producto">
-            <img src="motor.jpg" alt="Producto 2">
-            <h2>Motor V8 9cm</h2>
-            <p>Descripción del Producto 2.</p>
-            <p>Precio: $2000</p>
-            <button>Agregar al carrito</button>
-        </div>
-    
-        <!-- Puedes agregar más productos siguiendo la misma estructura -->
-    </section>
-    
+    </header>
+    <script>
+        const carrusel = document.querySelector('.carrusel');
+        const imagenes = carrusel.querySelectorAll('img');
+        let indiceImagenActual = 0;
 
-    <section class="productos">
-        <!-- Aquí puedes agregar productos y descripciones -->
-    </section>
+        function mostrarSiguienteImagen() {
+            imagenes[indiceImagenActual].style.display = 'none';
+            indiceImagenActual = (indiceImagenActual + 1) % imagenes.length;
+            imagenes[indiceImagenActual].style.display = 'block';
+        }
 
-    <footer>
-        <p>&copy; proyecto marcos godoy</p>
-    </footer>
+        setInterval(mostrarSiguienteImagen, 3000); // Cambia de imagen 
+        mostrarSiguienteImagen(); // Mostrar la primera imagen primero
+    </script>
 </body>
 </html>
+    <section class="catalogo">
+        <div class="producto">
+            <img src="grogu.jpg" alt="Producto 1">
+            <h2>Grogu 20cm</h2>
+            <p>Descripción del Producto 1.</p>
+            <p>Precio: $2500</p>
+            <button>Agregar al carrito</button>
+        </div>
+    
+        <div class="producto">
+            <img src="motor.jpg" alt="Producto 2">
+            <h2>Motor V8 9cm</h2>
+            <p>Descripción del Producto 2.</p>
+            <p>Precio: $2000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="grogu.jpg" alt="Producto 1">
+            <h2>Grogu 20cm</h2>
+            <p>Descripción del Producto 1.</p>
+            <p>Precio: $2500</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="motor.jpg" alt="Producto 2">
+            <h2>Motor V8 9cm</h2>
+            <p>Descripción del Producto 2.</p>
+            <p>Precio: $2000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="grogu.jpg" alt="Producto 1">
+            <h2>Grogu 20cm</h2>
+            <p>Descripción del Producto 1.</p>
+            <p>Precio: $2500</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="motor.jpg" alt="Producto 2">
+            <h2>Motor V8 9cm</h2>
+            <p>Descripción del Producto 2.</p>
+            <p>Precio: $2000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="grogu.jpg" alt="Producto 1">
+            <h2>Grogu 20cm</h2>
+            <p>Descripción del Producto 1.</p>
+            <p>Precio: $2500</p>
+            <button>Agregar al carrito</button>
+        </div>
+    
+        <div class="producto">
+            <img src="motor.jpg" alt="Producto 2">
+            <h2>Motor V8 9cm</h2>
+            <p>Descripción del Producto 2.</p>
+            <p>Precio: $2000</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+    </section>
+    
+
+    <section class="productos">
+    </section>
+
+   
+</body>
+</html>
+<footer class="contacto">
+    <div class="texto-contacto">
+        <h2>Contacto</h2>
+        <p>¡Estamos aquí para ayudarte! Puedes contactarnos a través de:</p>
+        <ul>
+            <li>Email: ejemplo@email.com</li>
+            <li>Teléfono: (123) 456-7890</li>
+        </ul>
+    </div>
+    <div class="imagenes-con-texto">
+        <div class="imagen-con-texto">
+            <img src="imagen1.jpg" alt="Imagen 1">
+            <p>Texto descriptivo de la imagen 1.</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <p>Texto descriptivo de la imagen 2.</p>
+        </div>
+        <!-- Agrega más imágenes con texto aquí -->
+    </div>
+</footer>
+<footer>
+    <p>&copy; proyecto marcos godoy</p>
+</footer>
