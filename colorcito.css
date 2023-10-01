@@ -310,3 +310,13 @@ header {
     margin-top: 10px;
     font-size: 16px;
 }
+.carrito {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    float: right; /* Alinea el carrito a la derecha */
+}
+
+
