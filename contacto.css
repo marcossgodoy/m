@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.pagina-contacto {
+    background: url('pngtree-blue-white-tech-geometric-abstract-background-image_752119.jpg') center/cover no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.encabezado {
+    background-color: rgba(185, 16, 16, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.encabezado nav ul li {
+    margin-right: 20px;
+}
+
+.contenido {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-contacto {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.pie-de-pagina {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+}

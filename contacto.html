@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
 </head>
+
 <body>
-    <header>
-        <h1>Contacto</h1>
-        <nav>
-            <ul>
-                <li><a href="pagina1.html">Inicio</a></li>
-                <li><a href="carrito.html">Cesta</a></li>
-                <li><a href="descarga.html">Descarga</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+    <div class="pagina-contacto">
+        <header class="encabezado">
+            <h1>Contacto</h1>
+            <nav>
+                <ul>
+                    <li><a href="pagina1.html">Inicio</a></li>
+                    <li><a href="cesta.html">Cesta</a></li>
+                    <li><a href="descarga.html">Descarga</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section class="formulario-contacto">
-            <h2>¡Contáctanos!</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br>
+        <main class="contenido">
+            <section class="formulario-contacto">
+                <h2>¡Contáctanos!</h2>
+                <form id="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
 
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
 
-                <input type="checkbox" id="confirmacion" required>
-                <label for="confirmacion">He leído y acepto la letra de contacto.</label><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+        <footer class="pie-de-pagina">
+            <p>&copy; 2023 Tienda de Piezas 3D. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 Tienda de Piezas 3D. Todos los derechos reservados.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
